@@ -14,9 +14,9 @@ contract AddressBookTest is Test {
     }
 
     function test_GetOwners() public {
-        address[] memory owners = addressBook.getOwners();
-        assertEq(owners.length, 2);
-        assertEq(owners[0], address(1));
-        assertEq(owners[1], address(2));
+        address[] memory _owners = addressBook.getOwners();
+        assertEq(_owners.length, 2);
+        assertEq(_owners[0], address(1));
+        assertEq(_owners[1], address(2));
     }
 }
